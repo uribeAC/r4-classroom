@@ -39,10 +39,23 @@ li {
 
 .main-header {
   > * {
+    background-color: #333;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .main-navigation {

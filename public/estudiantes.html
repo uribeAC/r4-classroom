@@ -15,22 +15,27 @@
       <h2>Estudiantes</h2>
       <form class="form new-student">
         <div class="form__group">
-          <label class="form__label">Nombre: </label>
+          <label for="name" class="form__label">Nombre: </label>
+          <input type="text" class="form__control" id="name" name="student_name" required />
         </div>
         <div class="form__group">
-          <label class="form__label">Apellido: </label>
+          <label for="last_name" class="form__label">Apellido: </label>
+          <input type="text" class="form__control" id="last_name" name="student_lastname" required />
         </div>
         <div class="form__group">
-          <label class="form__label">Edad: </label>
+          <label for="age" class="form__label">Edad: </label>
+          <input type="number" class="form__control" id="age" name="student_age" required />
         </div>
         <div class="form__group">
-          <label class="form__label">Correo: </label>
+          <label for="email" class="form__label">Correo: </label>
+          <input type="email" class="form__control" id="age" name="email" required />
         </div>
         <div class="form__group">
-          <label class="form__label">Telefono: </label>
+          <label class="phone_number">Telefono: </label>
+          <input type="text" class="form__control" id="age" name="phone_number" required />
         </div>
         <div class="form__group form__buttons">
-          <button class="form__button" type="reset">Crear estudiante</button>
+          <button class="form__button" type="submit">Crear estudiante</button>
         </div>
       </form>
       Total: <span class="counter">0</span> estudiantes

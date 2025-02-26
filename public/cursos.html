@@ -16,10 +16,11 @@
       <h2>Cursos</h2>
       <form class="form new-course">
         <div class="form__group">
-          <label class="form__label">Nombre: </label>
+          <label for="name" class="form__label">Nombre: </label>
+          <input type="text" class="form__control" id="name" name="course_name" required />
         </div>
         <div class="form__group form__buttons">
-          <button class="form__button">Crear curso</button>
+          <button type="submit" class="form__button">Crear curso</button>
         </div>
       </form>
       Total: <span class="counter">0</span> cursos

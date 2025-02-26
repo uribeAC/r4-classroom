@@ -3,8 +3,6 @@ import { students } from "../../index.js";
 import { Student } from "../../types.js";
 import { generateId } from "../../utils.js";
 
-// Crea una función para obtener el total de estudiantes
-// La función debe recibir un array de estudiantes y devolver el total de estudiantes
 export const getStudentsTotal = (students: Student[]): number => {
   return students.length;
 };
@@ -35,8 +33,6 @@ export const addStudent = (
   students.push(newStudent);
 };
 
-// Crea una función para eliminar un estudiante de la lista de estudiantes
-// La función debe recibir un array de estudiantes y el id del estudiante a eliminar
 export const deleteStudent = (students: Student[], id: number): void => {
   const idIndex = students.findIndex((student) => student.id === id);
 

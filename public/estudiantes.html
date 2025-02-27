@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 
-<>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Classroom - Estudiantes</title>
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/styles.css" />
   <script src="js/index.js" type="module"></script>
+</head>
 
-  <body>
-    <div class="container">
-      <main class="main-content">
-        <h2>Estudiantes</h2>
-        <form class="form new-student">
-          <div class="form__group">
-            <label for="name" class="form__label">Nombre: </label>
-            <input type="text" class="form__control" id="name" name="student_name" required />
-          </div>
-          <div class="form__group">
-            <label for="lastname" class="form__label">Apellido: </label>
-            <input type="text" class="form__control" id="lastname" name="student_lastname" required />
-          </div>
-          <div class="form__group">
-            <label for="age" class="form__label">Edad: </label>
-            <input type="number" class="form__control" id="age" name="student_age" required />
-          </div>
-          <div class="form__group">
-            <label for="email" class="form__label">Correo: </label>
-            <input type="email" class="form__control" id="email" name="student_email" required />
-          </div>
-          <div class="form__group">
-            <label for="phone" class="form__label">Telefono: </label>
-            <input type="text" class="form__control" id="phone" name="student_phone_number" required />
-          </div>
-          <div class="form__group form__buttons">
-            <button class="form__button" type="submit">Crear estudiante</button>
-          </div>
-        </form>
-        Total: <span class="counter">0</span> estudiantes
-        <table class="table students">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Edad</th>
-              <th>Correo</th>
-              <th>Telefono</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </main>
-    </div>
-    <div class="modal-error"></div>
-  </body>
+<body>
+  <div class="container">
+    <main class="main-content">
+      <h2>Estudiantes</h2>
+      <form class="form new-student">
+        <div class="form__group">
+          <label for="name" class="form__label">Nombre: </label>
+          <input type="text" class="form__control" id="name" name="student_name" required />
+        </div>
+        <div class="form__group">
+          <label for="lastname" class="form__label">Apellido: </label>
+          <input type="text" class="form__control" id="lastname" name="student_lastname" required />
+        </div>
+        <div class="form__group">
+          <label for="age" class="form__label">Edad: </label>
+          <input type="number" class="form__control" id="age" name="student_age" required />
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Correo: </label>
+          <input type="email" class="form__control" id="email" name="student_email" required />
+        </div>
+        <div class="form__group">
+          <label for="phone" class="form__label">Telefono: </label>
+          <input type="text" class="form__control" id="phone" name="student_phone_number" required />
+        </div>
+        <div class="form__group form__buttons">
+          <button class="form__button" type="submit">Crear estudiante</button>
+        </div>
+      </form>
+      Total: <span class="counter">0</span> estudiantes
+      <table class="table students">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <div class="modal-error"></div>
+</body>
 
 </html>

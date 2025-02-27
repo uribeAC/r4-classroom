@@ -41,6 +41,3 @@ export const getCoursesOptions = (courses: Course[]): selectedCourse[] => {
 
   return selectCourses;
 };
-
-console.log(getCoursesOptions(courses));
-console.log("hola");

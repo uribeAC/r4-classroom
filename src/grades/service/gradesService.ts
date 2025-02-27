@@ -1,4 +1,4 @@
-import { courses, students } from "../../index.js";
+import { courses, grades, students } from "../../index.js";
 import { showErrorModal } from "../../dom/index.js";
 import { Grade } from "../../types";
 import { generateId } from "../../utils.js";
@@ -22,4 +22,30 @@ export const getGradesTotal = (grades: Grade[]): number => {
 // Crea una función para crear una nueva nota
 // La función debe recibir un array de notas, el id del estudiante, el id del curso y el valor de la nota
 // Si la nota ya existe, muestra un error con showErrorModal
-// export const addGrade =
+export const addGrade = (
+  grades: Grade[],
+  studentId: number,
+  courseId: number,
+  gradeNumber: number
+): void => {
+  if (
+    grades.some(
+      (grade) =>
+        grade.courseId === courseId &&
+        grade.studentId === studentId &&
+        grade.value == gradeNumber
+    )
+  ) {
+    showErrorModal("Error: Esta nota ya existe");
+    return;
+  }
+
+  const newGrade: Grade = {
+    id: generateId(grades),
+    studentId: studentId,
+    courseId: courseId,
+    value: gradeNumber,
+  };
+
+  grades.push(newGrade);
+};

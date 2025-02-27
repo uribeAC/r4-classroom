@@ -8,7 +8,6 @@ export const getStudentsTotal = (students: Student[]): number => {
   return students.length;
 };
 
-console.log(generateId(students));
 export const addStudent = (
   students: Student[],
   name: string,
@@ -40,12 +39,6 @@ export const deleteStudent = (students: Student[], id: number): void => {
   students.splice(idIndex, 1);
 };
 
-// Crea una función para obtener las opciones de estudiantes para rellenar un select
-// La función debe recibir un array de estudiantes
-// La función debe devolver un array de objetos con tres propiedades: id, name y lastName
-// La propiedad id debe ser el id del estudiante
-// La propiedad name debe ser el nombre del estudiante
-// La propiedad lastName debe ser el apellido del estudiante
 export const getStudentsOptions = (students: Student[]): selectedStudent[] => {
   const selectStudents: selectedStudent[] = [];
 
@@ -57,11 +50,6 @@ export const getStudentsOptions = (students: Student[]): selectedStudent[] => {
     };
     selectStudents.push(newObjectStudent);
   }
-  //selectStudents.push({
-  //id: students[1].id,
-  //name: students[1].name,
-  //lastName: students[1].lastName,
-  //});
 
   return selectStudents;
 };

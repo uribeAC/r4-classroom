@@ -41,3 +41,13 @@ export type selectedCourse = {
   id: number;
   name: string;
 };
+
+export type selectedGrade = {
+  id: number;
+  studentId: number;
+  courseId: number;
+  value: number;
+  studentName: string;
+  studentLastName: string;
+  courseName: string;
+};
